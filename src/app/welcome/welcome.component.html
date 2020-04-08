@@ -1,9 +1,10 @@
 <h1>Welcome!</h1>
 
 <div class="container">
-  Enjoy the Todo's App!
+  Welcome {{name}}. You can manage your todos <a routerLink="/todos">here</a>
+</div>
 
-  <div>
-    Manage your Todo's <a routerLink="/todos">here</a>.
-  </div>
+<div class="container">
+  Click here to get a customized welcome message
+  <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
 </div>
